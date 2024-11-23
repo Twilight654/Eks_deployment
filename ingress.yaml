@@ -4,7 +4,7 @@ metadata:
   name: youtube-clone-ingress
   namespace: youtube-clone
   annotations:
-    kubernetes.io/ingress.class: alb
+    # kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing  # For AWS ALB
     alb.ingress.kubernetes.io/target-type: ip
 spec:
