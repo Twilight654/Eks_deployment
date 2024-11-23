@@ -1,1 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: youtube-clone-app
+  namespace: youtube-clone  # Replace with your desired namespace
+  labels:
+    app: youtube-clone-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: youtube-clone-app
+  template:
+    metadata:
+      labels:
+        app: youtube-clone-app
+    spec:
+      containers:
+      - name: youtube-clone-app
+        image: twilight17/youtube_clone
+        ports:
+        - containerPort: 3000
 
