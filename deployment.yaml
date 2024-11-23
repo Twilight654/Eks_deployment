@@ -4,16 +4,16 @@ metadata:
   name: youtube-clone-app
   namespace: youtube-clone  # Replace with your desired namespace
   labels:
-    app: youtube-clone-app
+    app: youtube-clone
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: youtube-clone-app
+      app: youtube-clone
   template:
     metadata:
       labels:
-        app: youtube-clone-app
+        app: youtube-clone
     spec:
       containers:
       - name: youtube-clone-app
