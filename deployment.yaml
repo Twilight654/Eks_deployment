@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: youtube-clone-app
-        image: twilight17/youtube_clone:11
+        image: twilight17/youtube_clone:12
         ports:
         - containerPort: 3000
 
